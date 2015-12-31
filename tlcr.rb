@@ -20,4 +20,9 @@ class Tlcr < Formula
   test do
     system "tlcr", "--completion"
   end
+
+  bottle do
+    root_url "https://github.com/porras/tlcr/releases/download/0.1.1"
+    sha256 "5c464967d69a51185abdb99ff23a39f659f37a510a89f0c27617f5c43bfa0772" => :yosemite
+  end
 end
