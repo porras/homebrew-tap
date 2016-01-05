@@ -1,13 +1,13 @@
 class Tlcr < Formula
   desc "Simple terminal-based client for TLDR pages, written in Crystal"
   homepage "https://github.com/porras/tlcr"
-  url "https://github.com/porras/tlcr/archive/0.2.0.tar.gz"
-  sha256 "93309d20e476486a4e5a283eac6ebd4d9b902c03c88ef4b6d86f327a5c9033ac"
+  url "https://github.com/porras/tlcr/archive/0.2.1.tar.gz"
+  sha256 "224e3818abad044cd65330b06e88d4730cbcc2c1b90fba48aa2f55d3f59e37e6"
   head "https://github.com/porras/tlcr.git"
 
   bottle do
-    root_url "https://github.com/porras/tlcr/releases/download/0.2.0"
-    sha256 "71d01f970a78f3f176532c25cfecb74d42211b38822023ef0de4904f6e99b9b8" => :yosemite
+    root_url "https://github.com/porras/tlcr/releases/download/0.2.1"
+    sha256 "b7f7718aa6896e767b841129eeed5c008989ebfb31090fb0fa817cd90037c0d8" => :yosemite
   end
 
   depends_on "crystal-lang" => :build
