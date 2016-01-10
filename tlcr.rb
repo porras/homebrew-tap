@@ -6,8 +6,8 @@ class Tlcr < Formula
   head "https://github.com/porras/tlcr.git"
 
   bottle do
-    root_url "https://github.com/porras/tlcr/releases/download/0.2.1"
-    sha256 "b7f7718aa6896e767b841129eeed5c008989ebfb31090fb0fa817cd90037c0d8" => :yosemite
+    root_url "https://github.com/porras/tlcr/releases/download/0.3.0"
+    sha256 "6f434710fa787ab90da18d27ac811d0307552c4753e5a6c679689ba8c7a38b1e" => :yosemite
   end
 
   depends_on "crystal-lang" => :build
