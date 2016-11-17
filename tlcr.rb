@@ -6,21 +6,23 @@ class Tlcr < Formula
   head "https://github.com/porras/tlcr.git"
 
   bottle do
+    rebuild 1
     root_url "https://github.com/porras/tlcr/releases/download/0.3.1"
-    sha256 "09fe66c483dbe8ac6850c39d3977c4d436317364dbe41caf64d58781ea6c431c" => :el_capitan
+    sha256 "7b7d62d06b5d4ace90f202e5a1060abec20be5bc8225f39957af6ad6ff88a5c0" => :el_capitan
   end
 
   depends_on "crystal-lang" => :build
-  depends_on "openssl"
   depends_on "libevent"
-  depends_on "libpcl"
   depends_on "bdw-gc"
 
   def install
     system "shards"
     system "crystal", "build", "--release", "tlcr.cr"
+    system "./tlcr --completion > tlcr-completion"
+
     bin.install "tlcr"
     doc.install "LICENSE"
+    bash_completion.install "tlcr-completion"
   end
 
   test do
